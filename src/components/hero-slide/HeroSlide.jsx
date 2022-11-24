@@ -32,7 +32,7 @@ const HeroSlide = () => {
     <div className="hero-slide">
       <Swiper
         modules={[Autoplay]}
-        autoplay={{ delay: 5000 }}
+        // autoplay={{ delay: 5000 }}
       >
         {movieItems?.map((item, i) => (
           <SwiperSlide key={i}>
