@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: blue;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -16,7 +16,7 @@ html {
     font-size: 80%;
   }
 
-  @include tablet {
+  @include mobile {
     font-size: 60%;
   }
 }

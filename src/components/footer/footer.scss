@@ -1,0 +1,48 @@
+@use "../../scss/index" as *;
+
+.footer {
+  position: relative;
+  padding: 3rem 2rem;
+  @include flex(center, center);
+  flex-direction: column;
+
+  &__logo {
+    margin-bottom: 3rem;
+    @include flex(center, center);
+
+    &__text {
+      font-size: 2rem;
+      font-weight: 600;
+      @include flex(center, center);
+
+      img {
+        width: 50px;
+        margin-right: 0.5rem;
+      }
+
+      &:hover {
+        color: unset;
+      }
+    }
+  }
+
+  &__menus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__menu {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 500;
+    gap: 1.5rem;
+  }
+}
